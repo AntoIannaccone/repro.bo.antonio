@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/webapp"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="lib" path="C:/apache-tomcat/lib/servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Antonio/logback-classic-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Antonio/logback-core-1.4.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Antonio/slf4j-api-2.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Antonio/mariadb-java-client-3.1.0.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
