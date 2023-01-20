@@ -53,18 +53,14 @@ public class RegistrationServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
 		String email = request.getParameter("email_input");
-//		String password = request.getParameter("password_input");
 		String firstName = request.getParameter("firstname_input");
 		String lastName = request.getParameter("lastname_input");
 		String birthDate = request.getParameter("birthdate_input");
-//		String role = request.getParameter("role_input");		
-//		int rowsUpdate=0;
 		boolean value = false;
 		
 		try {
-			//rowsUpdate = insertNewUser(email,password,firstName,lastName,birthDate);
 			value = insertNewUsers(email,firstName,lastName,birthDate);
 		} catch (ClassNotFoundException | SQLException | IOException | ParseException e) {
 			// TODO Auto-generated catch block
@@ -92,9 +88,7 @@ public class RegistrationServlet extends HttpServlet {
 		Timestamp userInsertedTime = Timestamp.valueOf(LocalDateTime.now());
 		Date date = Date.valueOf(birthDate);
 		int role = 10;
-//		int roleInsert = Integer.parseInt(role);
 		userToInsert.setEmail(email);
-//		userToInsert.setPassword(password);
 		userToInsert.setFirstName(firstName);
 		userToInsert.setLastName(lastName);
 		userToInsert.setDateOfBirth(date);
@@ -104,24 +98,5 @@ public class RegistrationServlet extends HttpServlet {
 		
 		return value;
 	}
-//	private int insertNewUser(String email, String password, String firstName, String lastName,
-//			String birthDate)
-//			throws ClassNotFoundException, SQLException, IOException, ParseException {
-//		
-//		User userToInsert = new User();
-//		Timestamp userInsertedTime = Timestamp.valueOf(LocalDateTime.now());
-//		Date date = Date.valueOf(birthDate);
-//		int role = 10;
-////		int roleInsert = Integer.parseInt(role);
-//		userToInsert.setEmail(email);
-//		userToInsert.setPassword(password);
-//		userToInsert.setFirstName(firstName);
-//		userToInsert.setLastName(lastName);
-//		userToInsert.setDateOfBirth(date);
-//		userToInsert.setRegDate(userInsertedTime);
-//		userToInsert.setRole(role);
-//		int rowsUpdate = DatabaseManagerSingleton.getInstance().insertTableUsers(userToInsert);
-//		return rowsUpdate;
-//	}
 	
 }

@@ -46,8 +46,8 @@
 
 	<dependency>
 		<groupId>proxima.informatica.academy</groupId>
-		<artifactId>persistence-app</artifactId>
-		<version>1.0-SNAPSHOT</version>
+  		<artifactId>persistence-app</artifactId>
+ 	    <version>1.0-SNAPSHOT</version>
 	</dependency>
 	
 	<dependency>
