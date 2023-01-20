@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registrazione</title>
+</head>
+        
+    <body>
+        <form method="post" action="./RegistrationServlet" class="autentication">
+            <h1>Registrazione</h1>
+            <input type=text id="email" placeholder="Email" name="email_input" required>
+            <input type="text" id="firstname" placeholder="Firstname" name="firstname_input" required>
+            <input type="text" id="lastname" placeholder="Lastname" name="lastname_input" maxlength="50">
+            <input type="date" id="birthdate" placeholder="Birthdate" name="birthdate_input" required>
+            <button type="submit" name="register" style="margin-left : 135px">Inserisci</button>
+        </form>
+	<form action="./login.jsp" method="post" class="autentication">
+	<button type="submit" value="Torna_Indietro" style="margin-left : 130px">Indietro</button>
+</form> 
+</html>
